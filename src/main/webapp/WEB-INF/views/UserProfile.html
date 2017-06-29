@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style>
+            input.hidden {
+    position: absolute;
+    left: -9999px;
+}
+
+#profile-image1 {
+    cursor: pointer;
+  
+     width: 100px;
+    height: 100px;
+	border:2px solid #03b1ce ;}
+	.tital{ font-size:16px; font-weight:500;}
+	 .bot-border{ border-bottom:1px #f8f8f8 solid;  margin:5px 0  5px 0}	
+</style>
+</head>
+<body data-ng-app="myApp">
+<div data-ng-controller="userctrl">
+<div data-ng-init="currentuser()">
+<div class="container">
+	<div class="row">
+       <div class="col-md-7 ">
+
+<div class="panel panel-default">
+  <div class="panel-heading">  <h4 >Leave Form Details</h4></div>
+   <div class="panel-body">
+       
+    <div class="box box-info">
+        
+   
+              
+              <br>
+    
+              <!-- /input-group -->
+            </div>
+            <div class="col-sm-6">
+            <h4 style="color:#00b1b1;">{{oneuser.empname}} </h4></span>
+              <span><p>ChatUs.Com</p></span>            
+            </div>
+            <div class="clearfix"></div>
+            <hr style="margin:5px 0 5px 0;">
+    
+              
+
+<div class="col-sm-5 col-xs-6 tital " >Employee ID:</div><div class="col-sm-7">{{oneuser.empid}}</div>
+  <div class="clearfix"></div>
+<div class="bot-border"></div>
+
+<div class="col-sm-5 col-xs-6 tital " >Employee Name:</div><div class="col-sm-7">{{oneuser.empname}}</div>
+
+ <div class="clearfix"></div>
+<div class="bot-border"></div>
+
+<div class="col-sm-5 col-xs-6 tital " >Start Date :</div><div class="col-sm-7">{{oneuser.startdate |  date:dd/MM/yyyy}}</div>
+
+<div class="clearfix"></div>
+<div class="bot-border"></div>
+
+<div class="col-sm-5 col-xs-6 tital " >End Date :</div><div class="col-sm-7">{{oneuser.enddate |  date:dd/MM/yyyy}}</div>
+
+  <div class="clearfix"></div>
+<div class="bot-border"></div>
+
+
+<div class="col-sm-5 col-xs-6 tital " >Department:</div><div class="col-sm-7">{{oneuser.department}}</div>
+
+ <div class="clearfix"></div>
+<div class="bot-border"></div>
+
+<div class="col-sm-5 col-xs-6 tital " >Reason:</div><div class="col-sm-7">{{oneuser.reason}}</div>
+
+
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+
+        </div>
+    </div> 
+    </div>
+</div>  
+ 
+   </div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
